@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NZSheds Builder</title>
+  <meta property="og:locale" content="en_AU"/>
+  <meta property="og:title" content="Web Shed | Loader Test"/>
+
+  <style type="text/css">
+    body,
+    html,
+    #shed-root {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="shed-root"></div>
+
+  <!-- Keep the id, required for IE -->
+  <script id="webshed-loader" src="https://webshed.unda.com.au/loader.js"></script>
+  <script>
+    var app = new unda.App("shed-root", {
+      customer: "nzsheds"
+    });
+  </script>
+</body>
+</html>
